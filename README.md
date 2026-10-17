@@ -1,1 +1,1 @@
-# CamelCore Plugin Vault
+# CamelKit Plugin Vault
