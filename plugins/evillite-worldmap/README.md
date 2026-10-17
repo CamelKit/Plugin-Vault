@@ -37,12 +37,12 @@ plugin hub) an approval/distribution site references each plugin by URL + hash.
 This repo is a reference example of that structure:
 
 ```
-src/WorldMapPlugin.ts   the plugin (extends `Plugin` from @evillite/core)
+src/WorldMapPlugin.ts   the plugin (extends `Plugin` from @camelkit/core)
 dist/world-map.js       built ES-module bundle the client loads
 data/world-map-icons.json  prebaked model-icon cache (loaded via the core
                         PluginAssetCache; copied into the client's plugins/data/)
 plugin.json             manifest (id, author, version, entry, sha256) for the hub
-package.json            build via esbuild; @evillite/core + @babylonjs are externals
+package.json            build via esbuild; @camelkit/core + @babylonjs are externals
 ```
 
 Persistence & assets use core services: per-map object/NPC/filter state is stored
@@ -50,7 +50,7 @@ on the reactive `plugin.data` (auto-persisted to IndexedDB per user), and render
 model icons are cached via core's `PluginAssetCache` (the prebaked `data/` file
 above, so end users load icons instead of regenerating them).
 
-The plugin imports from `@evillite/core`, which the client provides at runtime via
+The plugin imports from `@camelkit/core`, which the client provides at runtime via
 its import map — so the bundle stays tiny and never vendors the core.
 
 ## Build
@@ -60,8 +60,8 @@ yarn          # or npm install
 yarn build    # -> dist/world-map.js
 ```
 
-`@evillite/core` and `@babylonjs/*` are marked external; they are supplied by the
-EvilLite client at runtime.
+`@camelkit/core` and `@babylonjs/*` are marked external; they are supplied by the
+CamelKit client at runtime.
 
 ## Use it in the client
 

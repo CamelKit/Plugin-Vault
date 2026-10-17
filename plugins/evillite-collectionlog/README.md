@@ -24,7 +24,7 @@ Stall/chest/quest rewards add straight to inventory (no ground item); that path 
 
 ## Build / load
 ```bash
-yarn build   # -> dist/collection-log.js (esbuild, externalizes @evillite/core)
+yarn build   # -> dist/collection-log.js (esbuild, externalizes @camelkit/core)
 ```
 Until the Plugin Hub lands it's bundled as a temp core plugin in the client (like the World Map). Later
 the Hub loads it from this repo.

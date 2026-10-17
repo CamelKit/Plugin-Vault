@@ -29,7 +29,7 @@ await esbuild.build({
     target: 'es2020',
     // The client supplies these at runtime; never bundle them. Patterns are matched
     // by esbuild itself, so the '*' is safe here (no shell involved).
-    external: ['@evillite/core', '@babylonjs/*'],
+    external: ['@camelkit/core', '@camelkit/core/*', '@babylonjs/*'],
     plugins: [CSSMinifyPlugin],
     loader: {
         '.html': 'text',

@@ -1,6 +1,4 @@
-import { Plugin } from '@evillite/core/src/interfaces/highlite/plugin/plugin.class';
-import { SettingsTypes } from '@evillite/core/src/interfaces/highlite/plugin/pluginSettings.interface';
-import { ModelIconCache } from '@evillite/core/src/utilities/modelIconCache';
+import { Plugin, SettingsTypes, ModelIconCache } from '@camelkit/core';
 
 /**
  * Collection Log / Drop Log (MVP) — tracks every item you EARN, in a bank-style UI, organised by

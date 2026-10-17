@@ -1,7 +1,4 @@
-import { Plugin } from '@evillite/core/src/interfaces/highlite/plugin/plugin.class';
-import { SettingsTypes, type PluginSettings } from '@evillite/core/src/interfaces/highlite/plugin/pluginSettings.interface';
-import { PluginAssetCache } from '@evillite/core/src/utilities/pluginAssetCache';
-import { ModelIconCache } from '@evillite/core/src/utilities/modelIconCache';
+import { Plugin, SettingsTypes, type PluginSettings, PluginAssetCache, ModelIconCache } from '@camelkit/core';
 
 /**
  * World Map plugin for EvilQuest.

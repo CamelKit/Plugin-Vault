@@ -23,7 +23,7 @@ await esbuild.build({
     plugins: [
       CSSMinifyPlugin,
     ],
-  external: ['@babylonjs/core', '@highlite/plugin-api'],
+  external: ['@camelkit/core', '@camelkit/core/*', '@babylonjs/core'],
   loader: {
     '.html': 'text',
     '.png': 'dataurl',
