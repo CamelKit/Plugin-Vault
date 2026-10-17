@@ -2,7 +2,7 @@
 // like '@babylonjs/*' are passed as an array and never reach a shell for glob
 // expansion. The previous `--external:@babylonjs/*` CLI flag was glob-expanded by
 // the CI build shell ("No matches found") and failed the air-gapped builder.
-// Mirrors the CamelC0re CCTestPlugin template (build.mjs + node build.mjs).
+// Mirrors the CamelKit CCTestPlugin template (build.mjs + node build.mjs).
 import * as esbuild from 'esbuild';
 import fs from 'fs/promises';
 import pkgJson from './package.json' with { type: 'json' };
