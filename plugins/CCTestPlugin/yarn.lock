@@ -5,6 +5,18 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@camelkit/core@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@camelkit/core@npm:0.1.0"
+  dependencies:
+    acorn: "npm:^8.15.0"
+    acorn-walk: "npm:^8.3.4"
+    idb: "npm:^8.0.3"
+    on-change: "npm:^5.0.1"
+  checksum: 10c0/57f3dc8ddfa52b8701a86b44a86aece9d2475e72c9415a49807b5e63f402f0323fe5ed2343f1923f5765cdb89369e8d27e2f9ca68e446e5037cbda4284e6fe14
+  languageName: node
+  linkType: hard
+
 "@esbuild/aix-ppc64@npm:0.25.12":
   version: 0.25.12
   resolution: "@esbuild/aix-ppc64@npm:0.25.12"
@@ -187,25 +199,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ryelite/core@npm:^0.1.0":
-  version: 0.1.2
-  resolution: "@ryelite/core@npm:0.1.2"
-  dependencies:
-    acorn: "npm:^8.15.0"
-    acorn-walk: "npm:^8.3.4"
-    corepack: "npm:^0.34.5"
-    idb: "npm:^8.0.3"
-    on-change: "npm:^5.0.1"
-    tsc: "npm:^2.0.4"
-  checksum: 10c0/7e4be9085fffdadea2e3a96bb57e0b49e59d04ade12a2b49b397c8847e8ae59f4ba75c20507c04ed9cc49721aa7447b366e5b28d755aae883231306c30fe4c9b
-  languageName: node
-  linkType: hard
-
 "ExamplePlugin@workspace:.":
   version: 0.0.0-use.local
   resolution: "ExamplePlugin@workspace:."
   dependencies:
-    "@ryelite/core": "npm:^0.1.0"
+    "@camelkit/core": "npm:^0.1.0"
     esbuild: "npm:^0.25.8"
     typescript: "npm:^5.8.3"
   languageName: unknown
@@ -226,19 +224,6 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 10c0/5dcefea5f8f023b6cc24cbe71fb5a8112b601d36c4fa07d14e4e6ffc2ee47383332c46b36c766d9437725aa6660156eae50efa0c838719823b50d7c327c4ed42
-  languageName: node
-  linkType: hard
-
-"corepack@npm:^0.34.5":
-  version: 0.34.7
-  resolution: "corepack@npm:0.34.7"
-  bin:
-    corepack: ./dist/corepack.js
-    pnpm: ./dist/pnpm.js
-    pnpx: ./dist/pnpx.js
-    yarn: ./dist/yarn.js
-    yarnpkg: ./dist/yarnpkg.js
-  checksum: 10c0/f1574ba32a401a4284b0f269ce4d6f6bd75d02a65bfbd238af93b74b5259aba50943b5f86d604fb44c6b8c20da10af2ba6a6f7f8d401b400f7b88205590b96fc
   languageName: node
   linkType: hard
 
@@ -342,15 +327,6 @@ __metadata:
   version: 5.0.1
   resolution: "on-change@npm:5.0.1"
   checksum: 10c0/3be9929f45af820288ff3c104290e8bf6346889a51f7b0ccb6eb20802e5b84e34917811a5f267c3fa94729061be99c7aeb99036d1ce6099c673551e8beb04d0a
-  languageName: node
-  linkType: hard
-
-"tsc@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "tsc@npm:2.0.4"
-  bin:
-    tsc: bin/tsc
-  checksum: 10c0/4651d344891d995e62ab7ca64ce0a8597bbdc2d392886c9956d15caab4dc9bfe86e759d3385b3f97c49fb5294194a161d6812673e3f51e46357c82482f32c3ab
   languageName: node
   linkType: hard
 

@@ -22,7 +22,7 @@ import { Plugin, SettingsTypes, ModelIconCache } from '@camelkit/core';
  * the UI into collapsible NPCs / Stalls & Chests / Quest Rewards categories.
  */
 
-const ICON_BASE = 'https://evilquest.net/items/';
+const ICON_BASE = 'https://memoriesofmagic.com/items/';
 const DROP_MATCH_TILES = 2;     // ground item must spawn within this many tiles of the death
 const DROP_WINDOW_MS = 6000;    // …and within this long after the death
 const ENGAGED_TTL_MS = 15000;   // an NPC counts as "yours" if you targeted it within this window

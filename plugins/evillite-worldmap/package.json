@@ -9,7 +9,7 @@
   "evillite": {
     "id": "world-map",
     "displayName": "World Map",
-    "entry": "dist/world-map.js",
+    "entry": "dist/plugin.js",
     "minClientVersion": "0.2.0"
   },
   "scripts": {
@@ -17,7 +17,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@camelkit/core": "^0.0.1",
+    "@camelkit/core": "^0.1.0",
     "esbuild": "^0.25.0",
     "typescript": "^5.4.0"
   },

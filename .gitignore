@@ -1,0 +1,19 @@
+# Dependencies & PnP
+**/.pnp.*
+**/.yarn/*
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
+**/node_modules/
+
+# Build outputs
+**/dist/
+**/build/
+**/out/
+
+# Environment & logs
+.env
+.env.*
+*.log

@@ -17,8 +17,7 @@ await esbuild.build({
   entryPoints: [`${pkgJson.main}`],
   bundle: true,
   minify: false,
-  outExtension: { '.js': '.js' },
-  outdir: 'dist',
+  outfile: 'dist/plugin.js',
   format: 'esm',
     plugins: [
       CSSMinifyPlugin,

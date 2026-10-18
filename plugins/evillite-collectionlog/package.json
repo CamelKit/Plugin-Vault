@@ -8,15 +8,15 @@
   "evillite": {
     "id": "collection-log",
     "displayName": "Collection Log",
-    "entry": "dist/collection-log.js",
+    "entry": "dist/plugin.js",
     "minClientVersion": "0.2.0"
   },
   "scripts": {
-    "build": "esbuild src/CollectionLogPlugin.ts --bundle --format=esm --platform=browser --target=es2020 --external:@camelkit/core --outfile=dist/collection-log.js",
+    "build": "esbuild src/CollectionLogPlugin.ts --bundle --format=esm --platform=browser --target=es2020 --external:@camelkit/core --outfile=dist/plugin.js",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@camelkit/core": "^0.0.1",
+    "@camelkit/core": "^0.1.0",
     "esbuild": "^0.25.0",
     "typescript": "^5.4.0"
   },

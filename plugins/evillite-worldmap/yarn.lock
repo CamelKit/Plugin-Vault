@@ -5,6 +5,18 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@camelkit/core@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@camelkit/core@npm:0.1.0"
+  dependencies:
+    acorn: "npm:^8.15.0"
+    acorn-walk: "npm:^8.3.4"
+    idb: "npm:^8.0.3"
+    on-change: "npm:^5.0.1"
+  checksum: 10c0/57f3dc8ddfa52b8701a86b44a86aece9d2475e72c9415a49807b5e63f402f0323fe5ed2343f1923f5765cdb89369e8d27e2f9ca68e446e5037cbda4284e6fe14
+  languageName: node
+  linkType: hard
+
 "@esbuild/aix-ppc64@npm:0.25.12":
   version: 0.25.12
   resolution: "@esbuild/aix-ppc64@npm:0.25.12"
@@ -187,19 +199,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@evillite/core@file:./evillite-core.tgz::locator=evillite-worldmap%40workspace%3A.":
-  version: 0.1.2
-  resolution: "@evillite/core@file:./evillite-core.tgz#./evillite-core.tgz::hash=6d11bc&locator=evillite-worldmap%40workspace%3A."
-  dependencies:
-    acorn: "npm:^8.15.0"
-    acorn-walk: "npm:^8.3.4"
-    idb: "npm:^8.0.3"
-    on-change: "npm:^5.0.1"
-    tsc: "npm:^2.0.4"
-  checksum: 10c0/9f4470062e84464f9d653b60278797819c8590906610130bea410cad274a54d346afe88534495a3323bed035b918818f78fffa7898901dbf6da121496d60ddee
-  languageName: node
-  linkType: hard
-
 "acorn-walk@npm:^8.3.4":
   version: 8.3.5
   resolution: "acorn-walk@npm:8.3.5"
@@ -311,7 +310,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "evillite-worldmap@workspace:."
   dependencies:
-    "@evillite/core": "file:./evillite-core.tgz"
+    "@camelkit/core": "npm:^0.1.0"
     esbuild: "npm:^0.25.0"
     typescript: "npm:^5.4.0"
   languageName: unknown
@@ -328,15 +327,6 @@ __metadata:
   version: 5.0.1
   resolution: "on-change@npm:5.0.1"
   checksum: 10c0/3be9929f45af820288ff3c104290e8bf6346889a51f7b0ccb6eb20802e5b84e34917811a5f267c3fa94729061be99c7aeb99036d1ce6099c673551e8beb04d0a
-  languageName: node
-  linkType: hard
-
-"tsc@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "tsc@npm:2.0.4"
-  bin:
-    tsc: bin/tsc
-  checksum: 10c0/4651d344891d995e62ab7ca64ce0a8597bbdc2d392886c9956d15caab4dc9bfe86e759d3385b3f97c49fb5294194a161d6812673e3f51e46357c82482f32c3ab
   languageName: node
   linkType: hard
 
