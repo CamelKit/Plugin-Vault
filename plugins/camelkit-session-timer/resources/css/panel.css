@@ -1,0 +1,181 @@
+
+.session-timer-panel {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.75em;
+  color: #dfd3b3;
+  font: 14px/1.4 Verdana, Arial, sans-serif;
+  overflow-wrap: anywhere;
+}
+
+.session-timer-panel *,
+.session-timer-panel *::before,
+.session-timer-panel *::after {
+  box-sizing: border-box;
+}
+
+.session-timer-title {
+  margin: 0;
+  color: #e4be66;
+  font: 700 1.05em/1.4 Verdana, Arial, sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+}
+
+.session-timer-clock {
+  width: 100%;
+  min-width: 0;
+  padding: 0.4em 0.3em;
+  border: 1px solid rgb(216, 181, 108);
+  border-bottom: 5px solid rgb(216, 181, 108);
+
+  background-image:
+    linear-gradient(
+      rgba(98, 55, 42, 0.85),
+      rgba(58, 37, 30, 0.91)
+    ),
+    url("https://memoriesofmagic.com/ui/stone-dark.png");
+
+  color: #f9df9b;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: clamp(24px, 2vw, 36px);
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  text-shadow: 1px 1px #000;
+}
+
+.session-timer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  min-width: 0;
+}
+
+.session-timer-option {
+  display: flex;
+  gap: 0.55em;
+  align-items: flex-start;
+  min-width: 0;
+  width: 100%;
+  font: inherit;
+  color: #dfd3b3;
+  cursor: pointer;
+}
+
+.session-timer-option input[type='checkbox'] {
+  flex: 0 0 auto;
+  width: 1em;
+  height: 1em;
+  margin: 0.2em 0 0;
+  accent-color: #874c3d;
+}
+
+.session-timer-option span {
+  flex: 1;
+  min-width: 0;
+}
+
+.session-timer-option:has(input:disabled) span {
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.session-timer-warning {
+  margin: 0.3em 0 0;
+  padding-top: 0.7em;
+  border-top: 1px solid #55452e;
+  font: 12px/1.5 Verdana, Arial, sans-serif;
+  color: #d9c9a8;
+}
+
+.session-timer-warning strong {
+  color: #f1685b;
+}
+
+#ui-chat-inner {
+  container-type: inline-size;
+}
+
+#ui-chat-area .chat-tab-bar > .session-timer-chat-clock {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+  flex: 0 0 auto;
+  margin-left: auto;
+
+  height: 28px;
+  min-height: 0;
+  padding: 0 7px;
+
+  border: 1px solid rgb(182, 154, 93);
+  border-bottom: 0;
+  border-radius: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(98, 55, 42, 0.85),
+      rgba(58, 37, 30, 0.91)
+    ),
+    url("https://memoriesofmagic.com/ui/stone-dark.png");
+
+  background-size: auto, 128px auto;
+
+  box-shadow:
+    rgba(201, 160, 91, 0.333) 0px 2px 0px 0px inset,
+    rgb(216, 181, 108) 0px -3px 0px 0px inset;
+
+  color: #ffe5a2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: clamp(10px, 2.5cqi, 12px);
+  line-height: 16px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+
+  text-shadow:
+    1px 1px 0 #000,
+    0 0 2px rgba(0, 0, 0, 0.7);
+
+  pointer-events: none;
+
+  position: relative;
+  top: 0;
+  left: 0;
+
+  padding-bottom: 2px;
+}
+
+#ui-chat-area .chat-tab-bar >
+.session-timer-chat-clock.session-timer-chat-clock--transparent {
+  background: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+@container (max-width: 360px) {
+  #ui-chat-area .chat-tab-bar > .session-timer-chat-clock {
+    padding-inline: 2px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .session-timer-panel {
+    padding: 0.55em;
+  }
+
+  .session-timer-clock {
+    font-size: 20px;
+  }
+}

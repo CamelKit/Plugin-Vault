@@ -1,0 +1,18 @@
+{
+  "plugin_id": "camelkit-session-timer",
+  "license": "GPL-3.0-only",
+  "original_creator": "jrumbolt",
+  "current_maintainer": "jrumbolt",
+  "succession_status": "active",
+  "release_history": [
+    {
+      "version": "1.0.0",
+      "event": "update",
+      "maintainer": "jrumbolt",
+      "upstream_repository": "https://github.com/jrumbolt/camelkit-session-timer",
+      "verified_commit_hash": "fd56674e9732a983d631a1f82c6bfe959d584d78",
+      "approved_by": "Metsutan",
+      "timestamp": "2026-10-21T05:42:41Z"
+    }
+  ]
+}

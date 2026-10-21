@@ -1,0 +1,23 @@
+{
+  "name": "camelkit-session-timer",
+  "version": "1.0.0",
+  "description": "A lightweight session timer plugin for CamelKit",
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "author": "jrumbolt",
+  "main": "src/SessionTimer.ts",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@camelkit/core": "^0.1.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "yarn@4.9.1"
+}
